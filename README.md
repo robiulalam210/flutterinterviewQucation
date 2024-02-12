@@ -2,11 +2,11 @@
 
 1)What is Flutter?
 Flutter is an open-source framework by Google for building beautiful, natively compiled, multi-platform applications from a single codebase.
-Flutter is not a language; it is an SDK. Flutter apps use the Dart programming language for creating an app. The first alpha version of Flutter was released in May 2017.
+Flutter is not a language; it is an SDK. Flutter apps use the Dart programming language for creating an app. The first alpha version of Flutter was released in May 2017. Flutter 3.13 extends its support to Android 14 while also refining iOS functionalities Flutter 3.10 is live!
 
 2) What is Dart?
 It is open-source and developed by Google in 2011. The purpose of Dart programming is to create frontend user interfaces for the web and mobile apps.
-Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development.
+Dart is a client-optimized language for developing fast apps on any platform. Its goal is to offer the most productive programming language for multi-platform development.  3.2.6 / 24 January 2024
 
 3)What are the Flutter widgets?
 Flutter widgets are built using a modern framework that takes inspiration from React. The central idea is that you build your UI out of widgets. Widgets describe what their view should look like given their current configuration and state. When a widget’s state changes, the widget rebuilds its description, which the framework diffs against the previous description to determine the minimal changes needed in the underlying render tree to transition from one state to the next.
@@ -22,6 +22,7 @@ build() : This is called right after didChangeDependencies(). All the GUI is ren
 didUpdateWidget(): It’ll be called once the parent Widget did a change and needs to redraw the UI.
 deactivate(): Framework calls this method whenever it removes this State object from the tree
 dispose(): It is called when this object and its State are removed from the tree permanently and will never build again.
+
 6) What is AppLifecycleState?
 
 AppLifecycleState is as follows:
@@ -72,6 +73,7 @@ A hot restart is much different from a hot reload.
 In Hot restart, it destroys the preserved State value and set them to their default. So if you are using state value in your application then after every hot restart the developer gets a fully compiled application and all the states will be set to their defaults.
 The app widget tree is completely rebuilt with a new type of code.
 Hot Restart takes much higher time than Hot reload.
+
 11) Can you nest a Scaffold? Why or why not?
 
 Yes, you can nest a Scaffold. That’s the beauty of Flutter. You control the entire UI.
@@ -100,7 +102,6 @@ BuildContext is the widget's element in the Element tree — so every widget has
 
 You usually use BuildContext to get a reference to the theme or another widget. For example, if you want to show a material dialog, you need a reference to the scaffold. You can get it with Scaffold.of(context), where context is the build context. of() searches up the tree until it finds the nearest scaffold.
 
-For more information click here.
 
 15) How do you talk to native code from within a Flutter app?
 Normally you don’t need to talk to native code because the Flutter framework or third-party plugins handle it. However, if you do find yourself needing to get special access to the underlying platform, you can use platform channels.
@@ -117,8 +118,6 @@ Unit tests are all about checking the validity of your business logic.
 Widget tests are for making sure UI widgets have the components that you expect them.
 Integration tests check that your app is working as a whole.
 
-For more information click here.
-
 17) What are the pros and cons of different state management solutions?
 While there are countless varieties, some of the more popular state management solutions include BLoC, ChangeNotifier with Provider, Redux, MobX, and RxDart. These are all appropriate for medium- to large-scale apps, if you’re only making a quick demo app, then a stateful widget is often enough.
 
@@ -127,7 +126,7 @@ Instead of listing the pros and cons of each state management option, it’s mor
 If you’re heavily reliant on streams, such as with a Firebase API, then it’s natural to choose a stream-based solution like BLoC or RxDart.
 
 And if you need undo/redo functionality, then you’d want a solution like BLoC or Redux that handles immutable states well.
-
+//commmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 18) What is Stream in Flutter?
 A stream is a sequence of asynchronous events. It provides an asynchronous sequence of data. It is the same as a pipe where we put some value on one end, and if we have a listener on the other end, it will receive that value. We can keep multiple listeners in a stream, and all of those will receive the same value when put in the pipeline.
 
