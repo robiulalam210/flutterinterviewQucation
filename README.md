@@ -30,3 +30,8 @@ inactive — The application is in an inactive state and is not receiving user i
 paused — The application is not currently visible to the user, not responding to user input, and running in the background.
 resumed — The application is visible and responding to user input.
 suspending — The application will be suspended momentarily. (Android only).
+
+7) What is pubspec.yaml file?
+It is responsible for handling importing images/fonts/third-party packages which you want to include in your project.
+The pubspec. yaml file is used to define the dependencies of your Flutter project. This metadata information is written in the YAML language. This file can have the following fields name, version, description, homepage, repository, documentation, dependencies, environment, and more about the pubspec.yaml file.
+
