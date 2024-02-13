@@ -126,7 +126,7 @@ Instead of listing the pros and cons of each state management option, it’s mor
 If you’re heavily reliant on streams, such as with a Firebase API, then it’s natural to choose a stream-based solution like BLoC or RxDart.
 
 And if you need undo/redo functionality, then you’d want a solution like BLoC or Redux that handles immutable states well.
-//commmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+
 18) What is Stream in Flutter?
 A stream is a sequence of asynchronous events. It provides an asynchronous sequence of data. It is the same as a pipe where we put some value on one end, and if we have a listener on the other end, it will receive that value. We can keep multiple listeners in a stream, and all of those will receive the same value when put in the pipeline.
 
@@ -137,9 +137,7 @@ In dart '_' is used before the variable name to declare it as private. Unlike ot
 In Flutter, the event loop is a central concept that helps manage the flow of control within an app. It is responsible for processing events and updating the app’s state in response to those events.
 
 An isolate is a separate thread of execution that is isolated from the main thread of the app. Isolates are used in Flutter to allow concurrent execution of code, which can be useful for tasks that might take a long time to complete, such as network requests or computationally intensive operations.
-
 The event loop is related to isolates in that it is responsible for coordinating the execution of code across multiple isolates, if they are used in the app. It does this by sending messages between isolates and scheduling the execution of code on the appropriate isolate.
-
 Overall, the event loop plays a crucial role in the operation of a Flutter app, helping to manage the flow of control and coordinate the execution of code across multiple isolates.
 
 21) What is the tree shaking in Flutter?
