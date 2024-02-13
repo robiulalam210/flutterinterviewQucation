@@ -174,10 +174,6 @@ FutureBuilder is used for one-time response, like taking an image from the Camer
 
 On the other hand, StreamBuilder is used for fetching some data more than once, like listening for a location update, playing music, stopwatch, etc.
 
-Both StreamBuilder and FutureBuilder have the same behavior: They listen to changes on their respective object. And trigger a new build when they are notified of a new value.
-Future is like Promise in JS or Task in c#. They are the representation of an asynchronous request. Futures have one and only one response. A common usage of Future is to handle HTTP calls. What you can listen to on a Future is its state. Whether it’s done, finished with success, or had an error. But that’s it.
-Stream on the other hand is like an async Iterator in JS. This can be assimilated into a value that can change over time. It usually is the representation of web sockets or events (such as clicks). By listening to a Stream you’ll get each new value and also if the Stream had an error or completed A Future can’t listen to a variable change. It’s a one-time response. Instead, you’ll need to use a Stream.
-
 29) What is the Future?
 A Future is used to represent a potential value, or error, that will be available at some time in the future. Receivers of a Future can register callbacks that handle the value or error once it is available.
 To perform asynchronous operations in Dart, you can use the Future class and the async and await keywords. A future (lower case “f”) is an instance of the Future (capitalized “F”) class.
@@ -199,15 +195,13 @@ Method → Member (A member of an object or class)
 A function is a piece of code that is called by name. It can be passed data to operate on (i.e. the parameters) and can optionally return data (the return value). All data that is passed to a function is explicitly passed.
 
 A method is a piece of code that is called by a name that is associated with an object. In most respects it is identical to a function except for two key differences:
-
 A method is implicitly passed the object on which it was called.
 A method is able to operate on data that is contained within the class (remembering that an object is an instance of a class — the class is the definition, and the object is an instance of that data).
+
 32) What is mean by responsive and adaptive apps?
 Responsive:- responsive app has had its layout tuned for the available screen size. Often this means (for example), re-laying out the UI if the user resizes the window, or changes the device’s orientation. This is especially necessary when the same app can run on a variety of devices, from a watch, phone, or tablet, to a laptop or desktop computer.
 
 Adaptive:- Adapting the app to run on different device types, such as mobile and desktop, requires dealing with mouse and keyboard input, as well as touch input. It also means there are different expectations about the app’s visual density, how component selection works (cascading menus vs bottom sheets, for example), using platform-specific features (such as top-level windows), and more.
-
-For more detail click here.
 
 33) What is LayoutBuilder?
 LayoutBuilder Widget is similar to the Builder widget except that the framework calls the builder function at layout time and provides the parent widget’s constraints. This is useful when the parent constrains the child’s size and doesn’t depend on the child’s intrinsic size.
